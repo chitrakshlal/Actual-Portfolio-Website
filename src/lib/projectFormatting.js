@@ -61,6 +61,7 @@ const PROJECT_KEYWORDS = [
   "manufacturability",
   "3D printing",
   "Fully constrained",
+  "Blender",
   "Streamlit",
   "Drafting",
   "CATIA",

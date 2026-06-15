@@ -190,6 +190,34 @@ export const projectCases = [
       "This project is a prototype implementation, with future improvements planned in scalability, retrieval accuracy, and real world integration. The core concept demonstrates the use of AI powered retrieval systems to make aviation maintenance knowledge more accessible, structured, and efficient for engineers and technicians. Unfortunately for this project it was a bit heavy to host it without paying so I could only host it locally.",
     ],
   },
+  {
+    id: "turbofan-engine-digital-design-dmu-visualization",
+    title: "Turbofan Engine Digital Design & DMU Visualization",
+    image: "/assets/aeronautical/Turbofan%20Website/Screenshot%202026-06-15%20223212.png",
+    images: [
+      "/assets/aeronautical/Turbofan%20Website/Screenshot%202026-06-15%20223212.png",
+      "/assets/aeronautical/Turbofan%20Website/Screenshot%202026-06-15%20223319.png",
+      "/assets/aeronautical/Turbofan%20Website/Screenshot%202026-06-15%20223416.png",
+      "/assets/aeronautical/Turbofan%20Website/Screenshot%202026-06-15%20223453.png",
+    ],
+    techStack: [
+      "CATIA",
+      "DMU",
+      "Kinematics",
+      "Assembly Design",
+      "Aerospace Engineering",
+    ],
+    links: {
+      demo: "https://turbofan-website.vercel.app",
+    },
+    fullDescription: [
+      "Turbofan Engine Design & Digital Inspection Interface",
+      "Designed a complete turbofan engine in CATIA, focusing on realistic aerospace Part Design, Assembly Design, Kinematics, and DMU (Digital Mock Up) principles. The engine was developed as a structured engineering model rather than just a visual asset, reflecting real world aerospace design workflows.",
+      "Built a supporting Three.js based 3D visualisation dashboard to inspect and interact with the CATIA designed engine in a CAD style environment.",
+      "•\tCATIA-based turbofan engine design (core focus of project)\n•\tApplied Part Design, Assembly Design, Kinematics, and DMU (Digital Mock Up)\n•\tEngine structured to reflect real aerospace engineering assembly logic\n•\tBlender used for model refinement and export pipeline preparation\n•\tInteractive 3D dashboard for CAD style inspection and part analysis\n•\tFeatures exploded view, component selection, and engineering data panels\n•\tIncludes engine throttle simulation and inspection camera views",
+      "Built to replicate aerospace digital engineering workflows, bridging CATIA based design engineering with modern interactive DMU style visualization systems.",
+    ],
+  },
 ];
 
 export function getProjectById(id) {
