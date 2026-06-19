@@ -192,13 +192,16 @@ export const projectCases = [
   },
   {
     id: "turbofan-engine-digital-design-dmu-visualization",
-    title: "Turbofan Engine Digital Design & DMU Visualization",
+    title: "Turbofan Engine Digital Design & DMU Visualization & FEA Analysis",
     image: "/assets/aeronautical/Turbofan%20Website/Screenshot%202026-06-15%20223212.png",
     images: [
       "/assets/aeronautical/Turbofan%20Website/Screenshot%202026-06-15%20223212.png",
       "/assets/aeronautical/Turbofan%20Website/Screenshot%202026-06-15%20223319.png",
       "/assets/aeronautical/Turbofan%20Website/Screenshot%202026-06-15%20223416.png",
       "/assets/aeronautical/Turbofan%20Website/Screenshot%202026-06-15%20223453.png",
+      "/assets/aeronautical/Turbofan%20Website/Overview.png",
+      "/assets/aeronautical/Turbofan%20Website/Exploded%20View.png",
+      "/assets/aeronautical/Turbofan%20Website/Fan%20Blade%20Stresss%20Von%20Mires.jpeg",
     ],
     techStack: [
       "CATIA",
@@ -206,16 +209,18 @@ export const projectCases = [
       "Kinematics",
       "Assembly Design",
       "Aerospace Engineering",
+      "FEA",
+      "Blender",
+      "Static Analysis",
     ],
     links: {
       demo: "https://turbofan-website.vercel.app",
     },
     fullDescription: [
-      "Turbofan Engine Design & Digital Inspection Interface",
-      "Designed a complete turbofan engine in CATIA, focusing on realistic aerospace Part Design, Assembly Design, Kinematics, and DMU (Digital Mock Up) principles. The engine was developed as a structured engineering model rather than just a visual asset, reflecting real world aerospace design workflows.",
-      "Built a supporting Three.js based 3D visualisation dashboard to inspect and interact with the CATIA designed engine in a CAD style environment.",
-      "•\tCATIA-based turbofan engine design (core focus of project)\n•\tApplied Part Design, Assembly Design, Kinematics, and DMU (Digital Mock Up)\n•\tEngine structured to reflect real aerospace engineering assembly logic\n•\tBlender used for model refinement and export pipeline preparation\n•\tInteractive 3D dashboard for CAD style inspection and part analysis\n•\tFeatures exploded view, component selection, and engineering data panels\n•\tIncludes engine throttle simulation and inspection camera views",
-      "Built to replicate aerospace digital engineering workflows, bridging CATIA based design engineering with modern interactive DMU style visualization systems.",
+      "Designed a complete simple turbofan engine in CATIA, focusing on realistic aerospace Part Design, Assembly Design, Kinematics, and DMU (Digital Mock Up) principles. The engine was developed as a structured engineering model rather than just a visual asset.",
+      "Built a supporting Three.js based 3D visualization dashboard to inspect and interact with the CATIA designed engine in a CAD style environment. The platform was later extended to incorporate structural analysis results, enabling engineering interpretation of blade behaviour under centrifugal conditions.",
+      "• CATIA based turbofan engine design\n• Applied Part Design, Assembly Design, Kinematics, and DMU (Digital Mock Up) methodologies\n• Blender used for model refinement and export pipeline preparation\n• Interactive 3D dashboard for CAD style inspection and component analysis\n• Features exploded view, component selection, and engineering data panels\n• Includes engine throttle simulation\n• Conducted Static Structural Finite Element Analysis (FEA) of the fan blade using SimScale\n• Analysed von Mises Stress, Strain, and Displacement distributions under rotational loading\n• Generated root to tip stress, strain, and displacement plots to evaluate blade structural behaviour\n• Integrated engineering analysis results into the dashboard to support digital inspection and design evaluation",
+      "Built to replicate modern Aerospace Digital Engineering Workflows by combining CATIA based design, Finite Element Analysis (FEA), and interactive DMU-style visualization within a single engineering-focused platform.",
     ],
   },
 ];

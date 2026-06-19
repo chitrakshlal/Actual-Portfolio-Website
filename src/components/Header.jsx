@@ -23,7 +23,7 @@ export function Header({ activePath, onNavigate }) {
           <img src=${profile.portrait} alt="" />
           <span>Chitraksh</span>
         </a>
-        <button className="icon-button menu-button" type="button" aria-label="Open navigation" aria-expanded="false" onClick=${toggleMenu}>
+        <button className="icon-button" type="button" aria-label="Open navigation" aria-expanded="false" onClick=${toggleMenu}>
           <${Icon} name="menu" />
         </button>
         <nav className="site-nav" aria-label="Main navigation">

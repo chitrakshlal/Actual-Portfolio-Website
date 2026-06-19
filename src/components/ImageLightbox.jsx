@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { html } from "../lib/html.js";
+import { Icon } from "./Icons.jsx";
 
 export function ImageLightbox({ images, alt = "" }) {
   const [selectedSrc, setSelectedSrc] = useState(null);
@@ -57,6 +58,9 @@ export function ImageLightbox({ images, alt = "" }) {
             aria-label="View image fullscreen"
           >
             <img src=${src} alt=${alt} />
+            <span className="project-image-button__zoom" aria-hidden="true">
+              <${Icon} name="zoom" />
+            </span>
           </button>
         `)}
       </div>

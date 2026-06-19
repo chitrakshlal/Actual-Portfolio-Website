@@ -143,9 +143,10 @@ export function ProjectsPage({ onNavigate }) {
               data-reveal
             >
               <img src=${item.image} alt="" />
-              <div>
+              <div className="project-card__body">
                 <h3>${item.title}</h3>
                 <p>${renderFormattedProjectParagraph(getProjectPreview(item))}</p>
+                <span className="project-card__hint" aria-hidden="true">Click More.....</span>
               </div>
             </a>
           `)}
@@ -162,9 +163,11 @@ export function ProjectDetailPage({ project, onNavigate }) {
         <${LinkButton} href="/aeronautical-projects" onNavigate=${onNavigate} variant="ghost">Back to projects<//>
         <h1>${project.title}</h1>
       </section>
+      <section className="project-detail-gallery" data-reveal>
+        <${ImageLightbox} images=${project.images} alt=${project.title} />
+      </section>
       <section className="project-list shell">
         <article className="project-section" data-reveal>
-          <${ImageLightbox} images=${project.images} alt=${project.title} />
           <div className="project-copy glass-panel">
             <h2>${project.title}</h2>
             ${project.techStack?.length ? html`
