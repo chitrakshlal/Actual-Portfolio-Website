@@ -1,6 +1,7 @@
 import "./styles/app.css";
 import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { Analytics } from "@vercel/analytics/react";
 import { html } from "./lib/html.js";
 import { startMotion, scrollToTop, stopMotion } from "./lib/animations.js";
 import { Header } from "./components/Header.jsx";
@@ -96,6 +97,7 @@ function App() {
         : html`<${CurrentPage} onNavigate=${navigate} />`}
       <${Footer} onNavigate=${navigate} />
     </div>
+    <${Analytics} />
   `;
 }
 
